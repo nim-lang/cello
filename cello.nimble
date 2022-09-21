@@ -11,6 +11,7 @@ skipDirs      = @["tests", "benchmarks", "img"]
 requires "nim >= 0.20.0", "spills >= 0.1.3"
 
 task test, "run cello tests":
+  --mm:refc
   --hints: off
   --linedir: on
   --stacktrace: on
